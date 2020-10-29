@@ -67,7 +67,7 @@ ggplot(data=Q8.1,aes(y=Steps,x=interval,group=1,color=WDWE))+geom_line() +scale_
 
 ggplot(data=Q8.1,aes(y=Steps,x=interval,group=1,color=WDWE))+geom_line() +scale_x_discrete(breaks = seq(0, 2500, by = 300))+ylab("Mean Steps")+xlab("Intervals")+ggtitle("Mean steps across intervals by Weekend and Weekday")
 ```
-![alt text] (https://github.com/hashaam007/RepData_PeerAssessment1/blob/master/plot8.png)
+![alt text](https://github.com/hashaam007/RepData_PeerAssessment1/blob/master/plot8.png)
 
 #Producing the panel plot
 ```{r, echo = TRUE}
@@ -77,11 +77,11 @@ xyplot(data=Q8.1,Steps~interval|WDWE, grid = TRUE, type = c("p", "smooth"), lwd 
 library(hexbin)
 hexbinplot(data=Q8.1,Steps~interval|WDWE, aspect = 1, bins=50)
 ```
-![alt text] (https://github.com/hashaam007/RepData_PeerAssessment1/blob/master/plott8.1.png)
+![alt text](https://github.com/hashaam007/RepData_PeerAssessment1/blob/master/plott8.1.png)
 
 ```{r, echo = TRUE}
 xyplot(data=Q8.1,Steps~interval|WDWE, grid = TRUE, type = c("p", "smooth"), lwd = 4,panel = panel.smoothScatter)
 hexbinplot(data=Q8.1,Steps~interval|WDWE, aspect = 1, bins=50)
 ```
-![alt text] (https://github.com/hashaam007/RepData_PeerAssessment1/blob/master/plot8.2.png)
+![alt text](https://github.com/hashaam007/RepData_PeerAssessment1/blob/master/plot8.2.png)
 
